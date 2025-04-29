@@ -1,8 +1,7 @@
-# Voice Activity Detection (VAD) with Energy Thresholding and Signal Framing
+# Speech Segmentation Toolkit: Voice Activity & Silence Detection in Audio
 
-This notebook implements a simple yet effective Voice Activity Detection (VAD) system using basic signal processing techniques. It processes audio files to identify segments containing speech by applying energy thresholding on framed signals. The notebook includes functionalities to:
-- Load and preprocess .wav audio files
-- Segment audio using short-time framing
-- Compute energy levels for each frame
-- Identify speech frames based on energy thresholds
-- Visualize detected speech segments against the original waveform
+This project provides a practical toolkit for segmenting speech and silence within audio files using signal processing techniques. It includes:
+- Voice Activity Detection (VAD): Uses short-time energy thresholding to identify active speech segments in .wav audio.
+- Silence Detection: Implements silence period identification by analyzing low-energy frames or gaps between speech bursts.
+- Visualization: Clear waveform visualizations showing detected speech and silence boundaries.
+- Modular Structure: Functions are written for reusability and can be easily integrated into real-time speech processing pipelines or preprocessing stages for ASR (Automatic Speech Recognition) systems.
